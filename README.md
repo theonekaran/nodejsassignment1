@@ -17,4 +17,4 @@ Completed:
 
 Walkthrough Gif:
 
-![Video Walkthrough](http://i.imgur.com/PSrDpOY.gif)
+![alt tag](https://raw.githubusercontent.com/theonekaran/proxy/master/walkthrough.gif)
