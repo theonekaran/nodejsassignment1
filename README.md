@@ -17,4 +17,4 @@ Completed:
 
 Walkthrough Gif:
 
-![alt tag](https://raw.githubusercontent.com/theonekaran/proxy/master/walkthrough.gif)
+![alt tag](https://raw.githubusercontent.com/theonekaran/nodejsassignment1/master/walkthrough.gif)
