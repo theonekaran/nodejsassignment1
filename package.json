@@ -1,5 +1,13 @@
 {
   "name": "clis",
+  "bin": {
+    "cli-echo": "./echo.js,
+    "cli-cat": "./cat.js,
+    "cli-touch": "./touch.js,
+    "cli-ls": "./ls.js,
+    "cli-mkdir": "./mkdir.js,
+    "cli-rm": "./rm.js
+  }
   "version": "1.0.0",
   "description": "A collection of CLI utilities",
   "main": "index.js",
@@ -8,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/CrabDude/nodejs-clis-starter.git"
+    "url": "https://github.com/theonekaran/nodejsassignment1.git"
   },
-  "author": "Adam Crabtree",
+  "author": "Karan Khurana",
   "license": "MIT",
   "dependencies": {
     "co": "^4.6.0",

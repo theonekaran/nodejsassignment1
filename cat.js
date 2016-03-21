@@ -4,8 +4,9 @@ require('./helper')
 let fs = require('fs').promise
 let argv = require('yargs').argv
 
-function* echo() {
-    process.stdout.write(argv._ + '\n')
+function* cat() {
+	let file = yield fs.readFile(argv._[0])
+    process.stdout.write(file + '\n')
 }
 
-module.exports = echo
+module.exports = cat
