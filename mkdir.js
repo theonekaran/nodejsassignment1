@@ -16,10 +16,6 @@ function* mkdir(dirPath) {
 				co(mkdir(path.dirname(dirPath)))
 				co(mkdir(dirPath))
 			}
-			else if (e.errno == -17) {
-				console.log("Directory already Exists")
-			}
-			else console.log(e)
 	}
     
 }

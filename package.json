@@ -22,6 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "co": "^4.6.0",
+    "lodash": "^4.6.1",
     "safeguards": "0.0.3",
     "songbird": "^1.0.2",
     "trycatch": "^1.5.21",

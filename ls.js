@@ -27,7 +27,7 @@ function* ls_rec(rootPath) {
 		let fileNames = yield fs.readdir(rootPath)
 		for (let fileName of fileNames) {
 			let filePath = path.join(rootPath, fileName)
-			let promise = co(ls(filePath))
+			let promise = co(ls_rec(filePath))
     		lsPromises.push(promise)
 		}
 		return yield Promise.all(lsPromises)
@@ -38,14 +38,19 @@ function* ls_rec(rootPath) {
 }
 
 function* main() {
+    let dir = ''
+	if (!argv._[0]) {
+		dir = "./"
+	}
+	else dir = argv._[0]
     if (argv.R) {
-    	let filePaths = _.flatten(yield ls_rec(argv._[0]))
+    	let filePaths = _.flatten(yield ls_rec(dir))
     	for (let fileName of filePaths) {
 	    	process.stdout.write(fileName + "\n")
 	    }
     }
     else {
-    	let filePaths = _.flatten(yield ls(argv._[0]))
+    	let filePaths = yield ls(dir)
     }
     
 }
